@@ -1,0 +1,30 @@
+
+#include<stdio.h>
+void main()
+{
+int i,j,k,n,p[10],bur[10],wat[10],tur[10],ttur=0,twat=0,t;
+float awat,atur;
+printf("\nEnter no. of process :");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("\nEnter the burst time for process %d: ",(i+1));
+scanf("%d",&bur[i]);
+p[i]=i+1;
+}
+for(i=0;i<n;i++)
+{
+for(j=i+1;j<n;j++)
+{
+if(bur[i]>bur[j])
+{
+t=bur[i];
+bur[i]=bur[j];
+bur[j]=t;
+t=p[i];
+p[i]=p[j];
+p[j]=t;
+}
+}
+}
+printf("\nPROCESS\tBURST TIME \t WAITING TIME \t TURN AROUND TIME\n");
