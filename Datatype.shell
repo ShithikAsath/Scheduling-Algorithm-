@@ -1,0 +1,33 @@
+echo "------------------------------------"
+
+echo "\tShell Data Types"
+
+echo "------------------------------------"
+
+# variables definition
+
+a=19
+
+b=15.45
+
+c='S'
+
+str="Sachin"
+
+flag=true
+
+# constant variable definition
+
+readonly id=99
+
+echo "Int\t\t\t\t-> $a"
+
+echo "Float\t\t\t-> $b"
+
+echo "Character\t\t-> $c"
+
+echo "Name\t\t\t-> $str"
+
+echo "Boolean\t\t\t-> $flag"
+
+echo "Int Constant\t-> $id"
